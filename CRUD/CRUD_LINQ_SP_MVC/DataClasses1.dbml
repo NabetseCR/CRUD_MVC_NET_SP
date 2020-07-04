@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="crud" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-JHO0LNQ\SQLEXPRESS;Initial Catalog=crud;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="crudConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.SP_EMP" Method="SP_EMP">
+    <Parameter Name="EMID" Parameter="eMID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EMNAME" Parameter="eMNAME" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="EMAIL" Parameter="eMAIL" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="SALARY" Parameter="sALARY" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CRUDOPTION" Parameter="cRUDOPTION" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="SP_EMPResult">
+      <Column Name="EMID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EMNAME" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="SALARY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
